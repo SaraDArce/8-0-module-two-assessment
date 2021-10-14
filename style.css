@@ -2,7 +2,7 @@ body {
   display: grid;
   background-color: lavender;
   grid-template-areas: "header header header";
-  grid-gap: 5px;
+  grid-gap: 1px;
 }
 
 #header {
@@ -32,10 +32,12 @@ body {
 }
 
 #film-selector {
-  grid-area: auto;
-  align-self: center;
+  margin-top: 40px;
+  margin-left: 200px;
+  padding-left: 20px;
 }
 
-/* #logo {
-  max-inline-size: 25%;
-} */
+#input-text {
+  padding-top: 200px;
+  
+}

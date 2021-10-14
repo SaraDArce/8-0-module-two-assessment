@@ -11,8 +11,8 @@ fetch("https://ghibliapi.herokuapp.com/films")
       //   let { title } = title;
       let select = document.querySelector("select");
       let chosenFilm = document.createElement("option");
-      chosenFilm.textContent = film.description;
-      chosenFilm.value = film.description;
+      chosenFilm.textContent = film.title;
+      chosenFilm.value = film.title;
       select.append(chosenFilm);
     }
   })

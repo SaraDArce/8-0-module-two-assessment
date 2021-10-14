@@ -1,0 +1,41 @@
+body {
+  display: grid;
+  background-color: lavender;
+  grid-template-areas: "header header header";
+  grid-gap: 5px;
+}
+
+#header {
+  background-color: skyblue;
+  font-family: monospace;
+  font-size: 12px;
+  grid-area: header;
+  text-align: center;
+  grid-gap: 5px;
+  max-height: 140px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#header img {
+  float: left;
+  width: 200px;
+  bottom: 0px;
+  max-height: 140px;
+}
+
+#img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 120px;
+  max-width: 350px;
+}
+
+#film-selector {
+  grid-area: auto;
+  align-self: center;
+}
+
+/* #logo {
+  max-inline-size: 25%;
+} */

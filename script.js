@@ -19,3 +19,9 @@ fetch("https://ghibliapi.herokuapp.com/films")
   });
 
 let form = document.querySelector("form#film-selector");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let chosenFilm = e.target["film-select"].value;
+  fetchFilmDetails(chosenFilm, true);
+});
